@@ -21,7 +21,6 @@ public class CSVFileReader {
 				dataList.add(line.split(","));
 			}
 			return dataList.toArray(new String[0][]);
-			
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
