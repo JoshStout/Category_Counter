@@ -95,7 +95,7 @@ public class CategoriesReader {
 	private ItemsArr fileIterator(File[] directoryListing) {
 		ItemsArr itemsArray = new ItemsArr();
 		for(File child : directoryListing) {
-			this.insertCategory(child.getName());
+			insertCategory(child.getName());
 			try {
 				Scanner sc = new Scanner(new File(child.toString()));
 				sc.useDelimiter("\r\n");
