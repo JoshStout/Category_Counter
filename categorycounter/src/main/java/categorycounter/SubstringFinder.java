@@ -34,10 +34,8 @@ public class SubstringFinder {
 		Item[] arr = items.getArray();
 		List<Item> list = new ArrayList<Item>();
 		for(int i = 0; i < arr.length; i++) {
-			if(cell.contains(arr[i].getItem())) {
-				list.add(arr[i]);
-			}
-		}		
+			if(cell.contains(arr[i].getItem())) list.add(arr[i]);
+		}
 		return list;
 	}
 	
